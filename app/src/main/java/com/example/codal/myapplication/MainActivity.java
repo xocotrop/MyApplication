@@ -388,7 +388,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Vi
             Log.d("Video", "Tem auto focus mode video");
         } else {
             parameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
-            Log.d("Video", "Tem auto focus mode imagem");
+            Log.d("Video", "Tem auto focus mode imagem"); //jhfsdjhfdsjhf de verdade? e assim? vai ou não vai as hole?!?!?!
         }
 
         //parameters.set( "cam_mode", 1 );
