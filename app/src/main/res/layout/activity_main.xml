@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!--<FrameLayout-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:id="@+id/frameSurface"-->
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="350dp"></FrameLayout>-->
+
+        <com.example.codal.myapplication.View.CameraSurface
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/containerOpcoes"
+            android:orientation="vertical"
+            android:background="@android:color/black"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:visibility="gone"
+                android:id="@+id/seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/tirarFoto"
+                    android:text="Tirar Foto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btnGravar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gravar" />
+
+                <Button
+                    android:id="@+id/btnFinalizar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Finalizar" />
+
+            </LinearLayout>
+
+            </LinearLayout>
+        <!--<TextureView-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:id="@+id/textureView"-->
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="350dp" />-->
+
+        <ImageView
+            android:layout_gravity="right|top"
+            android:id="@+id/switchCam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@android:drawable/ic_menu_camera" />
+    </FrameLayout>
+
+
+
+
+</LinearLayout>
